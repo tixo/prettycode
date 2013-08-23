@@ -69,6 +69,12 @@ public class PrettySize {
 		return displaySize;
 	}
 
+	/**
+	 * 保留3个有效数字
+	 * 如：1.68KB，108GB
+	 * @param displaySize
+	 * @return
+	 */
 	private static String getThreeSigFigs(BigDecimal displaySize) {
 		String number = String.valueOf(displaySize);
 		StringBuffer trimmedNumber = new StringBuffer();
